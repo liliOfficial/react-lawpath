@@ -3,8 +3,8 @@ import React from "react";
 import Sidebar from "./components/sidebar/sidebar";
 import "./App.css";
 import Header from "./components/header/header";
-import Dashboard from './components/dashboard/dashboard';
 import FloatButton from './components/floatButton/floatButton';
+import Router from './routes';
 function App() {
   return (
     <div>
@@ -13,7 +13,7 @@ function App() {
           <Header />
         </div>
         <div className="body">
-          <Dashboard/>
+          <Router/>
         </div>
       </div>
       <Sidebar />

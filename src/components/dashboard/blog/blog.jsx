@@ -30,7 +30,7 @@ const RecentlyBlog = () => {
       <div>
         {blogs.map((blog, index) => {
           return (
-            <div className="blog">
+            <div className="blog" key={index}>
               <div className="img-box">
                 <img src={blog.img} alt="blog.title" />
               </div>

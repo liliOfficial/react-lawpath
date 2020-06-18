@@ -33,7 +33,7 @@ const NextStep = () => {
         {data.UserFeed.map(item => {
           return (
             <div className="step-item hover-blue" key={item.id}>
-              <div class="img-box">
+              <div className="img-box">
                 <img className="step-icon" src={item.icon} alt="" />
               </div>
               <div>{item.trackEvent.slice(4)}</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import Sidebar from "./components/sidebar/sidebar";
 import "./App.css";
 import Header from "./components/header/header";

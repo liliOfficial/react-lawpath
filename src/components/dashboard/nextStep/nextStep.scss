@@ -1,0 +1,25 @@
+.step-list {
+  margin: 0 20px;
+  border-bottom: 1px solid #d2d8df;
+  border-top: 1px solid #d2d8df;
+  height: 380px;
+  overflow-y: auto;
+  .step-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d2d8df;
+    .img-box {
+      height: 25px;
+      width: 100px;
+      display:flex;
+      justify-content: center;
+      .step-icon {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-right: 20px;
+      }
+    }
+  }
+}

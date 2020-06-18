@@ -1,14 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { ApolloProvider } from "@apollo/react-hooks";
+import ApolloClient from "apollo-boost";
+import { gql } from "apollo-boost";
+
+const client = new ApolloClient({
+  uri: "https://staging-user-service.lawpath.net/graphql"
+});
+
+client
+  .query({
+    query: gql`
+      {
+        UserFeed(userId: "6677072274098487296") {
+          id
+          icon
+          seq
+          persist
+          dismissed
+          timestamp
+          trackEvent
+          md
+        }
+      }
+    `
+  })
+  .then(result => console.log(result));
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <ApolloProvider client={client}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </ApolloProvider>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

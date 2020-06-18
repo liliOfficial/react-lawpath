@@ -1,0 +1,50 @@
+.card.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .user-header {
+    background: #0075bf;
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+  }
+  .user-body {
+    padding: 20px;
+    position: relative;
+    font-size:13px;
+    color:#091F3C;
+    font-weight: 600;
+    margin:-5px;
+    
+    .user-body-item {
+      border-radius: 3px;
+      border: 1px solid #eee;
+      display:inline-flex;
+      width:97px;
+      margin:5px;
+      text-align: center;
+      justify-content: center;
+      padding:20px;
+      box-sizing: border-box;
+    }
+  }
+  .user-footer {
+    font-size: 13px;
+    font-weight: 700;
+    background: #e7f2f9;
+    padding: 20px;
+    margin-bottom: -20px;
+    .button {
+      margin-top: 10px;
+      display: flex;
+      height: 40px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      background: #00c08b;
+      border-radius: 3px;
+    }
+  }
+}

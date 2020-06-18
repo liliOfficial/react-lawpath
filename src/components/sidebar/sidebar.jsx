@@ -53,18 +53,18 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="sidebar-header">
-                <img src={require('./img/horizontal.svg')} alt="logo"/>
+                <img src={Logo} alt="logo"/>
             </div>
             {sidebarList.map(item=> {
                 return (
-                    <div className="sidebar-item">
+                    <div className="sidebar-item" key={item.name}>
                         <img src={item.img} alt={item.alt}/>
                         <span>{item.name}</span>
                     </div>
                 )
             })}
             <div className="button-box">
-                <a href="" className="upgrate">Upgrate</a>
+                <a href="/" className="upgrate">Upgrate</a>
             </div>            
         </div>
     )

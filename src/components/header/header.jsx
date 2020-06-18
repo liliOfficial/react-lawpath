@@ -1,10 +1,10 @@
 import React from "react";
-import './header.css';
+import "./header.css";
 
 const Header = () => {
-    const userName = 'John Doe';
+  const userName = "John Doe";
   return (
-    <div className="header">
+    <div className="header-box">
       <div className="welcome">Welcome to Lawpath, {userName}</div>
       <div className="actions">{userName}</div>
     </div>

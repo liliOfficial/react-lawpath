@@ -1,0 +1,20 @@
+.blog {
+  display: flex;
+  padding: 0 20px 20px;
+  color: #091f3c;
+  font-weight: 700;
+  .img-box {
+    width: 100px;
+    margin-right: 20px;
+    height:50px;
+    overflow: hidden;
+    position: relative;
+    img {
+      max-width: 100%;
+      min-height: 50px;
+    }
+  }
+  .blog-title {
+      flex: 1;
+  }
+}

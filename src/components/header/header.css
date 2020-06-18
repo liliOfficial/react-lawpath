@@ -1,21 +1,22 @@
-.header {
+.header-box {
     background:#fff;
     height: 50px;
     display: flex;
-    width:100%;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 2px 6px #0000001A;
+    padding-left:250px;
 }
 
-.welcome {
+.header-box .welcome {
     color:#091F3C;
     font-size: 13px;
     font-weight: 700;
-    margin-left: 30px;
+    margin-left: 3vw;
 }
 
-.actions {
-    margin-right: 30px;
+.header-box .actions {
+    top:50%;
+    margin-right: 3vw;
     color: #7A8AA0;
 }

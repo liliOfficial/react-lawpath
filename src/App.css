@@ -1,28 +1,41 @@
 .main {
   margin-left: 250px;
   background: #e6e9ed;
-  position: relative;
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top:0;
   left:0;
+  z-index: 900;
 }
 
 .body {
-  padding: 80px 30px 30px;
+  padding: 80px 3vw 30px;
 }
 
 .card {
   box-shadow: 0 3px 6px #00000029;
   background:#fff;
   border-radius: 3px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .card-header {
   padding:20px;
   color: #7A8AA0;
   font-weight: 700;
+  display:flex;
+  justify-content: space-between;
+}
+
+.card-header .card-action {
+  color:#0075BF;
+}
+
+.hover-blue:hover {
+  background:#E7F2F9;
 }

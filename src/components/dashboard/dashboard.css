@@ -1,0 +1,27 @@
+.dashboard-top {
+  display: flex;
+  flex: 1;
+  margin: 0 -10px 20px;
+  align-items: stretch;
+}
+
+.dashboard-top > div:first-child {
+  width: 245px;
+  margin: 10px;
+}
+
+.dashboard-top > div:last-child {
+  flex: 1;
+  margin: 10px;
+}
+
+.blog-event {
+  display: flex;
+  margin: -10px;
+}
+
+.blog-event > div {
+  flex: 1;
+  margin: 10px;
+  height: 320px;
+}

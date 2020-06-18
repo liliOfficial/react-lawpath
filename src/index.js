@@ -11,25 +11,6 @@ const client = new ApolloClient({
   uri: "https://staging-user-service.lawpath.net/graphql"
 });
 
-client
-  .query({
-    query: gql`
-      {
-        UserFeed(userId: "6677072274098487296") {
-          id
-          icon
-          seq
-          persist
-          dismissed
-          timestamp
-          trackEvent
-          md
-        }
-      }
-    `
-  })
-  .then(result => console.log(result));
-
 ReactDOM.render(
   <ApolloProvider client={client}>
     <React.StrictMode>

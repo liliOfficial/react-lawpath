@@ -1,0 +1,21 @@
+.header {
+    background:#fff;
+    height: 50px;
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px #0000001A;
+}
+
+.welcome {
+    color:#091F3C;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.actions {
+    margin-right: 30px;
+    color: #7A8AA0;
+}

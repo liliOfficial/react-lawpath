@@ -6,8 +6,8 @@
 .header {
   position: fixed;
   width: 100%;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 900;
 }
 
@@ -18,13 +18,13 @@
 .float-button {
   position: fixed;
   right: 30px;
-  bottom:30px;
-  width:60px;
+  bottom: 30px;
+  width: 60px;
 }
 
 .card {
   box-shadow: 0 3px 6px #00000029;
-  background:#fff;
+  background: #fff;
   border-radius: 3px;
   margin-bottom: 30px;
   overflow: hidden;
@@ -32,17 +32,35 @@
 }
 
 .card-header {
-  padding:20px;
-  color: #7A8AA0;
+  padding: 20px;
+  color: #7a8aa0;
   font-weight: 700;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
 .card-header .card-action {
-  color:#0075BF;
+  color: #0075bf;
+  text-decoration: none;
 }
 
 .hover-blue:hover {
-  background:#E7F2F9;
+  background: #e7f2f9;
 }
+
+.hover-dark {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-dark:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+

@@ -1,5 +1,6 @@
 import React from "react";
-import "./legalSolutions.css";
+import "./legalSolutions.scss";
+import { Link } from "react-router-dom";
 
 const LegalSolutions = () => {
   const solutions = [
@@ -24,7 +25,7 @@ const LegalSolutions = () => {
     <div className="card">
       <div className="card-header">
         <div>Popular Legal Solutions</div>
-        <div className="card-action">View all solutions</div>
+        <Link to="lawpath-test" className="card-action">View all solutions</Link>
       </div>
       <div className="solution-body">
         {solutions.map(solution => {

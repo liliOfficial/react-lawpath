@@ -1,6 +1,8 @@
 import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { gql } from "apollo-boost";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faTimes} from "@fortawesome/free-solid-svg-icons";
 
 import "./nextStep.scss";
 
@@ -36,7 +38,8 @@ const NextStep = () => {
               <div className="img-box">
                 <img className="step-icon" src={item.icon} alt="" />
               </div>
-              <div>{item.trackEvent.slice(4)}</div>
+              <div className="content">{item.trackEvent.slice(4)}</div>
+              <FontAwesomeIcon className="icon" icon={faTimes}/>
             </div>
           );
         })}

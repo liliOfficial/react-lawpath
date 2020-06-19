@@ -7,6 +7,9 @@
     color: white;
     font-weight: 700;
     padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .user-body {
     padding: 20px;
@@ -20,12 +23,21 @@
       border-radius: 3px;
       border: 1px solid #eee;
       display:inline-flex;
-      width:97px;
+      width:100px;
       margin:5px;
-      text-align: center;
+      flex-direction: column;
       justify-content: center;
-      padding:20px;
+      padding:20px 15px;
       box-sizing: border-box;
+      .icon {
+        font-size: 25px;
+        display:block;
+        margin:10px auto;
+      }
+      .name {
+        text-align: center;
+        min-height: 35px;
+      }
     }
   }
   .user-footer {
@@ -34,6 +46,16 @@
     background: #e7f2f9;
     padding: 20px;
     margin-bottom: -20px;
+
+    .upgrade {
+      display:flex;
+      justify-content: space-between;
+
+      .upgrade-link {
+        color:#0075BF;
+      }
+    }
+
     .button {
       margin-top: 10px;
       display: flex;
@@ -45,6 +67,11 @@
       text-decoration: none;
       background: #00c08b;
       border-radius: 3px;
+      
+      .icon {
+        font-size: 20px;
+        padding-right: 10px;
+      }
     }
   }
 }

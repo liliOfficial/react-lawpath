@@ -1,5 +1,6 @@
 import React from "react";
 import "./blog.scss";
+import {Link} from "react-router-dom";
 
 const RecentlyBlog = () => {
   const blogs = [
@@ -25,7 +26,7 @@ const RecentlyBlog = () => {
     <div className="card">
       <div className="card-header">
         <div>Recently on our blog</div>
-        <div className="card-action">Read more</div>
+        <Link to="lawpath-test" className="card-action">Read more</Link>
       </div>
       <div>
         {blogs.map((blog, index) => {

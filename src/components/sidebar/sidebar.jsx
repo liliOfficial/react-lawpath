@@ -1,52 +1,63 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import "./sidebar.css";
+import { Link } from "react-router-dom";
+import "./sidebar.scss";
 import Logo from "./img/horizontal.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpload } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   const sidebarList = [
     {
+      link: "/",
       img: require("./img/dashboard.png"),
       alt: "Dashboard Icon",
       name: "Dashboard"
     },
     {
+      link: "/lawpath-test",
       img: require("./img/documents.png"),
       alt: "Legal Documents Icon",
       name: "Legal Documents"
     },
     {
+      link: "/lawpath-test",
       img: require("./img/companies.png"),
       alt: "Companies Icon",
       name: "Companies"
     },
     {
+      link: "/lawpath-test",
       img: require("./img/lawyer.png"),
       alt: "Lawyer Quotes Icon",
       name: "Lawyer Quotes"
     },
     {
+      link: "/lawpath-test",
       img: require("./img/consultations.png"),
       alt: "Lawyer Consultations Icon",
       name: "Lawyer Consultations"
     },
     {
+      link: "/lawpath-test",
       img: require("./img/legal.png"),
       alt: "Legal Solutions Icon",
       name: "Legal Solutions"
     },
     {
+      link: "/lawpath-test",
       img: require("./img/offers.png"),
       alt: "Our Partner Offers Icon",
       name: "Our Partner Offers"
     },
     {
+      link: "/lawpath-test",
       img: require("./img/about.png"),
       alt: "About Icon",
       name: "About"
     },
     {
-      img: require("./img/dashboard.png"),
+      link: "/lawpath-test",
+      img: require("./img/settings.png"),
       alt: "Settings Icon",
       name: "Settings"
     }
@@ -54,22 +65,23 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <img src={Logo} alt="logo" />
+        <Link to="/">
+          <img src={Logo} alt="logo" />
+        </Link>
       </div>
       {sidebarList.map(item => {
         return (
-   
-            <Link to="/"className="sidebar-item" key={item.name} >
-              <img src={item.img} alt={item.alt} />
-              <span>{item.name}</span>
-            </Link>
-        
+          <Link to={item.link} className="sidebar-item" key={item.name}>
+            <img src={item.img} alt={item.alt} />
+            <span>{item.name}</span>
+          </Link>
         );
       })}
       <div className="button-box">
-        <a href="/" className="upgrate">
+        <Link to="/lawpath-test" className="hover-dark upgrate">
           Upgrate
-        </a>
+          <FontAwesomeIcon className="icon" icon={faUpload}/>
+        </Link>
       </div>
     </div>
   );

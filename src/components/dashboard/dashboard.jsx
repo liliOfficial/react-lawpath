@@ -1,5 +1,5 @@
 import React from "react";
-import "./dashboard.css";
+import "./dashboard.scss";
 import NextStep from "./nextStep/nextStep";
 import LegalSolutions from "./solutions/legalSolutions";
 import RecentlyBlog from "./blog/blog";

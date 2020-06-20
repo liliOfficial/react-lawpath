@@ -1,48 +1,16 @@
 import React from "react";
-import { useQuery } from "@apollo/react-hooks";
-import { gql } from "apollo-boost";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faTimes} from "@fortawesome/free-solid-svg-icons";
 
 import "./nextStep.scss";
+import UserFeed from "./userFeed";
 
 const NextStep = () => {
-  const USER_FEED = gql`
-    {
-      UserFeed(userId: "6677072274098487296") {
-        id
-        icon
-        seq
-        persist
-        dismissed
-        timestamp
-        trackEvent
-        md
-      }
-    }
-  `;
-
-  const { loading, error, data } = useQuery(USER_FEED);
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
-
   return (
     <div className="card">
       <div className="card-header">
         <div>Next steps</div>
       </div>
       <div className="step-list">
-        {data.UserFeed.map(item => {
-          return (
-            <div className="step-item hover-blue" key={item.id}>
-              <div className="img-box">
-                <img className="step-icon" src={item.icon} alt="" />
-              </div>
-              <div className="content">{item.trackEvent.slice(4)}</div>
-              <FontAwesomeIcon className="icon" icon={faTimes}/>
-            </div>
-          );
-        })}
+        <UserFeed />
       </div>
     </div>
   );

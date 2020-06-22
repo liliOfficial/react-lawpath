@@ -22,4 +22,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 2. Services layer: As only one section has a GraphQL API date, I have not structured an extra services layer for request.
 3. Mock Data layer: Mock Data can be written in json files and put in individual data folders, so that they can be easily replaced by response data.
 4. Unit test.
-5. Full-responsive: The current page will not desplay well on small screen expecially for mobile. Further discussion is need to make it full-responsive.
+5. Full-responsive: The current page will not display well on small screen expecially for mobile. Further discussion is need to make it full-responsive.

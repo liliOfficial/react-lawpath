@@ -17,3 +17,8 @@
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### `Further improvements`
+1. Typescript: As the test focuses more on style styling rather than data transforming, I did not use Typescript for the project. 
+2. Services layer: As only one section has a GraphQL API date, I have not structured an extra services layer for request.
+3. Mock Data layer: Mock Data can be written in json files and put in individual data folders, so that they can be easily replaced by response data.
+4. Unit test
